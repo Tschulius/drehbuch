@@ -39,57 +39,57 @@
 
 ### books
 
-| id | title | isbn | description | series_id | series_num |
-|---|---|---|---|---|---|
-| UUID | Text | VARCHAR(13) | Text | UUID | Number |
+| id    | title | isbn          | description   | series_id | series_num|
+|-------|-------|---------------|---------------|-----------|-----------|
+| UUID  | Text  | VARCHAR(13)   | Text          | UUID      | Number    |
 
 ### genres
 
-| id | name |
-|---|---|
-| UUID | Text |
+| id    | name  |
+|-------|-------|
+| UUID  | Text  |
 
 ### authors
 
-| id | name |
-|---|---|
-| UUID | Text |
+| id    | name  |
+|-------|-------|
+| UUID  | Text  |
 
 ### series
 
-| id | name |
-|---|---|
-| UUID | Text |
+| id    | name  |
+|-------|-------|
+| UUID  | Text  |
 
 ### wishlist
 
-| id | name |
-|---|---|
-| UUID | Text |
+| id    | name  |
+|-------|-------|
+| UUID  | Text  |
 
 ## Verknüpfungen
 
 ### book_genres
 
-| book_id | genre_id |
-|---|---|
-| UUID | UUID |
+| book_id   | genre_id  |
+|-----------|-----------|
+| UUID      | UUID      |
 
 ### book_authors
 
-| book_id | author_id |
-|---|---|
-| UUID | UUID |
+| book_id   | author_id |
+|-----------|-----------|
+| UUID      | UUID      |
 
 ### status
 
-| book_id | is_read | is_excluded | is_current |
-|---|---|---|---|
-| UUID | Boolean | Boolean | Boolean |
+| book_id   | is_read   | is_excluded   | is_current|
+|-----------|-----------|---------------|-----------|
+| UUID      | Boolean   | Boolean       | Boolean   |
 
 ### wishlist_books
 
-| book_id | wishlist_id |
-|---|---|
-| UUID | UUID |
+| book_id   | wishlist_id   |
+|-----------|---------------|
+| UUID      | UUID          |
 
